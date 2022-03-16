@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import styles from "../styles/SingleProduct.module.css";
 
-const SingleProduct = ({ product, message }) => {
+const SingleProduct = ({ product, message, setProducts }) => {
   const handleDelete = (e) => {
     const token = document.cookie.split("=")[1];
     deleteData(
@@ -22,15 +22,12 @@ const SingleProduct = ({ product, message }) => {
       },
     })
       .then((response) => {
-        //setLoading(false);
-        //setError("");
-        // set cookie
         message(response.data.message);
+        setProducts((prev) => prev.filter((value) => value.id !== product.id));
         console.log(response.data);
       })
       .catch((err) => {
-        //setLoading(false);
-        //setError("Failed to Login!");
+        console.log(err);
       });
   }
 

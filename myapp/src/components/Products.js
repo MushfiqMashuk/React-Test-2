@@ -187,6 +187,7 @@ const Products = () => {
               key={product.id}
               product={product}
               message={setSuccessMsg}
+              setProducts={setProducts}
             />
           ))}
       </div>
