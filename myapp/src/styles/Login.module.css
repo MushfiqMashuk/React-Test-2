@@ -1,0 +1,37 @@
+.form {
+  background-color: white;
+  min-height: 40%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  flex-direction: column;
+}
+
+.input {
+  background-color: rgb(242, 244, 247);
+  border: none;
+  padding: 15px;
+  outline-color: rgb(186, 218, 228);
+}
+
+.button {
+  background-color: #0277bd;
+  padding: 10px 25px;
+  color: aliceblue;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.button:active {
+  transition: all 1s;
+  position: relative;
+  top: 1px;
+}
+
+.error {
+  color: rgb(209, 23, 23);
+}

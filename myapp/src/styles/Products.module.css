@@ -1,0 +1,53 @@
+.container {
+  background-color: rgb(209, 204, 197);
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right {
+  flex: 1;
+
+  height: 100%;
+  padding: 20px;
+}
+
+.button {
+  border: none;
+  padding: 10px;
+  background-color: #0279bf;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.button:active {
+  transform: scale(0.9);
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+.add_product {
+  margin: 10px;
+}
+
+.message {
+  color: green;
+}
